@@ -1,0 +1,171 @@
+{
+  "name": "@angular-material-extensions/faq",
+  "description": "Angular Library built with material design in order to provide a reusable faq (frequently asked questions) component for every project. Ask, Answer and List",
+  "version": "3.0.4",
+  "homepage": "https://github.com/angular-material-extensions/faq",
+  "author": {
+    "name": "anthonynahas",
+    "url": "https://github.com/anthonynahas"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/angular-material-extensions/faq.git"
+  },
+  "license": "MIT",
+  "schematics": "./schematics/collection.json",
+  "keywords": [
+    "ngx",
+    " angular",
+    " library",
+    " faq",
+    " material",
+    " asking",
+    " questions",
+    " answers",
+    "material extensions",
+    "material design"
+  ],
+  "bugs": {
+    "url": "https://github.com/angular-material-extensions/faq/issues"
+  },
+  "private": true,
+  "scripts": {
+    "build": "gulp build",
+    "test": " gulp test",
+    "demo": " gulp build:demo",
+    "check-travis": " travis-status --repo=angular-material-extensions/faq --branch=master --fail-pending || echo 'Not yet passing'"
+  },
+  "dependencies": {
+    "@angular/cdk": "^7.3.6",
+    "@angular/common": "^7.2.11",
+    "@angular/core": "^7.2.11",
+    "@angular/flex-layout": "^7.0.0-beta.24",
+    "@angular/forms": "^7.2.11",
+    "@angular/material": "^7.3.6"
+  },
+  "devDependencies": {
+    "@angular-devkit/schematics": "^7.3.7",
+    "@angular/animations": "^7.2.11",
+    "@angular/compiler": "^7.2.11",
+    "@angular/compiler-cli": "^7.2.11",
+    "@angular/language-service": "^7.2.11",
+    "@angular/platform-browser": "^7.2.11",
+    "@angular/platform-browser-dynamic": "^7.2.11",
+    "@angular/platform-server": "^7.2.11",
+    "@compodoc/gulp-compodoc": "^0.0.10",
+    "@types/jest": "^24.0.11",
+    "@types/lodash": "^4.14.123",
+    "@types/node": "^10.14.4",
+    "angular-cli-ghpages": "^0.5.3",
+    "angular2-template-loader": "^0.6.2",
+    "autoprefixer": "^9.5.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-jest": "^24.5.0",
+    "codelyzer": "^4.5.0",
+    "commitplease": "3.2.0",
+    "conventional-github-releaser": "2.0.2",
+    "copy-webpack-plugin": "^5.0.2",
+    "core-js": "^2.6.0",
+    "css-loader": "^2.1.1",
+    "cssnano": "^4.1.7",
+    "del": "3.0.0",
+    "gulp": "3.9.1",
+    "gulp-bump": "^3.1.3",
+    "gulp-conventional-changelog": "^2.0.10",
+    "gulp-coveralls": "0.1.4",
+    "gulp-file": "0.4.0",
+    "gulp-git": "^2.8.0",
+    "gulp-hub": "0.8.0",
+    "gulp-inline-ng2-template": "5.0.1",
+    "gulp-tslint": "^8.1.4",
+    "gulp-util": "3.0.8",
+    "html-loader": "0.5.5",
+    "is-docker": "1.1.0",
+    "jest": "^24.5.0",
+    "jest-cli": "^24.5.0",
+    "jest-preset-angular": "^6.0.2",
+    "lodash": "^4.17.11",
+    "node-sass": "^4.11.0",
+    "postcss": "^7.0.5",
+    "postcss-strip-inline-comments": "0.1.5",
+    "pump": "3.0.0",
+    "raw-loader": "1.0.0",
+    "rollup": "^1.7.4",
+    "rollup-plugin-commonjs": "^9.2.2",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-sourcemaps": "0.4.2",
+    "rollup-plugin-uglify": "3.0.0",
+    "run-sequence": "2.2.1",
+    "rxjs": "^6.3.3",
+    "sass-loader": "7.1.0",
+    "schematics-utilities": "^1.1.2",
+    "source-map-loader": "0.2.4",
+    "to-string-loader": "1.1.5",
+    "travis-status": "^3.0.1",
+    "tsickle": "^0.34.0",
+    "tslint": "~5.12.1",
+    "typescript": "~3.2.4",
+    "webpack-node-externals": "^1.7.2",
+    "yargs": "12.0.5",
+    "zone.js": "^0.8.26"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "jest": {
+    "preset": "jest-preset-angular",
+    "roots": [
+      "<rootDir>/src/"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "text"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/config",
+      "/dist/"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/config/setupJest.ts"
+  },
+  "greenkeeper": {
+    "ignore": [
+      "@angular/core",
+      "@angular/common",
+      "@angular/compiler",
+      "@angular/platform-server",
+      "@angular/platform-browser",
+      "@angular/platform-browser-dynamic",
+      "@angular/compiler-cli",
+      "zone.js",
+      "rxjs",
+      "tslint",
+      "gulp-tslint",
+      "typescript",
+      "awesome-typescript-loader",
+      "codelyzer",
+      "@angular/animations",
+      "@types/jasmine",
+      "@types/jest",
+      "@types/node",
+      "conventional-github-releaser",
+      "rollup-plugin-uglify"
+    ]
+  },
+  "commitplease": {
+    "style": "angular",
+    "types": [
+      "feat",
+      "fix",
+      "docs",
+      "style",
+      "refactor",
+      "perf",
+      "test",
+      "chore",
+      "revert",
+      "demo"
+    ],
+    "scope": "\\S+.*"
+  }
+}
